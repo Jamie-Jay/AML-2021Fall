@@ -1,4 +1,5 @@
 import numpy as np
+from matplotlib import pyplot as plt
 
 '''
 The iris.names file describes the structure of the dataset. 
@@ -32,8 +33,8 @@ for line in open('iris.data'):
     class_array.append(r[4][:-1])
 attribute_array = np.array(attribute_array)
 
-# print(attribute_array)
-# print(class_array)
+print(attribute_array)
+print(class_array)
 
 '''
 Attribute Information:
@@ -47,7 +48,6 @@ Attribute Information:
       -- Iris Virginica
 '''
 # Create every possible scatterplot from all pairs of two attributes. 
-from  matplotlib  import  pyplot  as plt
 
 # Transpose the arr, the same attribute is in the same array
 # print(attribute_array.T)
